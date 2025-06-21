@@ -1,0 +1,343 @@
+<html>
+
+ <head>
+  <title> Database Management System</title>
+  <style>
+   .question{
+    font-size: 22px;
+	font-weight:bold;
+   }
+   
+   .answer{
+    font-size: 18px;
+	padding-left:20;
+   }
+   
+   body{
+   background-color:black;
+   }
+   
+   h1{
+   padding:10;
+   color:white;
+   }
+   
+   div{
+   padding:10;
+   background-color:#CAC4C3;
+   background-color:#CAC4C3 ;
+   }
+   
+   hr
+   {
+   border: none;
+   height:1px;
+   background-color:white;
+   }
+   
+   .table1{
+   margin-left: 0;
+   padding-left:0px
+   }
+   
+   table{
+   margin-left: 0;
+   padding-left:25px;
+   }
+   
+   td{
+   font-size="18"
+   padding-right:10;
+   padding-left:10;
+   }
+  </style>
+ </head>
+ 
+ <body>
+ <h1>Past Year Questions of DBMS(2020-2024 and Model Questions)</h1>
+ <p style="color:white;">Go back to:
+<button style="background-color: grey;"> <a href="index.html" style="color:white;">Table of Content</a></button> </p>
+ <hr>
+ <div>
+  <p class="question">Q.What is Database and DBMS? List out the advantages and disadvantages of DBMS.</p>
+  <p class="answer">A Database is a structured collection of data that can be stored in both physical and digital form for easy and simple access and management. For eg: A phonebook is an example of physical database and an online banking system can be example of digital database. <br>
+	 A Database Management System (DBMS) is software that manages digital databases, providing users and applications an interface to interact with data efficiently. <br><br>
+     <strong>Advantages</strong> of DBMS are reduced data redundancy(data isnt repeated), improved data integrity i.e. it ensures that data is recorded exactly as intended and remains unchanged and uncorrupted during storage, transfer, and retrieval, enhanced data security, efficient data access, support for backup and recovery, and concurrent user access i.e. multiple users can utilize the database without interfearing with eachother.<br>
+	 <strong> It's Disadvantages</strong> are increased system complexity, high cost, slower compared to simple file systems due to advanced features such as data integrity, security and querying , and potential security vulnerabilities if not managed properly.</p>
+ </div> 
+ <hr>
+<div> 
+ <p class="question">Q.Differentiate between file processing system and DBMS. Give at least four points.</p>
+  
+  <table class="table1" border="1" cellspacing="0" >
+  <tr>
+    <th>File Processing System</th>
+    <th>DBMS</th>
+  </tr>
+  <tr>
+    <td>Data Redundancy is High, because data is stored in multiple separate files.</td>
+    <td>Data Redundancy is Low, data is centralized to minimize duplication.</td>
+  </tr>
+  <tr>
+    <td>Data Consistency is difficult to maintain due to redundant data.</td>
+    <td>Data Consistency is ensured by DBMS.</td>
+  </tr>
+  <tr>
+    <td>Data Security is limited or present in form of manual security controls.</td>
+    <td>Data Security is built-in security features to control access.</td>
+  </tr>
+  <tr>
+    <td>Data Access is mostly sequential and slower access.</td>
+    <td>Data Access is efficient, flexible access using querying languages like SQL.</td>
+  </tr>
+  </table>
+ <br>
+</div>
+
+<hr>
+<div>
+  <p class="question">Q.Explain the different models of DBMS with advantages and disadvantages.</p>
+  <p class="answer">There are several types of DBMS models used to organize and manage data. Each model has its own structure, advantages, and disadvantages:</p> 
+  <p class="answer"><strong>1. Hierarchical Model:</strong><br> 
+  Data is organized in a tree-like structure using parent-child relationships, where each child has only one parent.<br><br> 
+  <b>Advantages:</b><br> – Simple and easy to understand.<br> 
+  – Efficient for data with a clear hierarchy (e.g., organizational charts).<br><br> 
+  <b>Disadvantages:</b><br> – Rigid structure; difficult to modify.<br> 
+  – Cannot efficiently represent many-to-many relationships.<br> 
+  – Requires data duplication in certain cases.</p> 
+  <p class="answer"><strong>2. Network Model:</strong><br> 
+  Similar to the hierarchical model but allows many-to-many relationships through the use of sets and pointers.<br><br> 
+  <b>Advantages:</b><br> – More flexible than the hierarchical model.<br> 
+  – Supports complex relationships and efficient access.<br><br> 
+  <b>Disadvantages:</b><br> – Complex structure; difficult to design and maintain.<br> 
+  – Requires knowledge of physical data paths.</p> 
+  <p class="answer"><strong>3. Relational Model:</strong><br> 
+  Data is stored in tables (called relations) consisting of rows and columns. It is the most widely used model today.<br><br> 
+  <b>Advantages:</b><br> – Simple and easy to understand.<br> 
+  – Uses powerful query language (SQL).<br> 
+  – Ensures data integrity and minimizes redundancy.<br><br> 
+  <b>Disadvantages:</b><br> – May not perform as well with very large or complex data structures.<br> 
+  – Can be inefficient in handling hierarchical or graph-based data.</p> 
+  <p class="answer"><strong>4. Object-Oriented Model:</strong><br> 
+  Data is stored as objects, similar to how it is handled in object-oriented programming languages. It supports complex data types.<br><br> 
+  <b>Advantages:</b><br> – Suitable for complex data types like multimedia and engineering designs.<br> 
+  – Integrates well with object-oriented programming.<br><br> 
+  <b>Disadvantages:</b><br> – Less widely adopted.<br> 
+  – More complex to design and manage.<br> 
+  – Limited support and tools compared to relational DBMS.</p>
+ </div>
+ <hr>
+  <div>
+  <p class="question">Q.What is a relational database? How is it different from other database models?</p>
+  <p class="answer">A relational database is a type of database which stores data in the form of tables called relations.Each table consists of rows called records and columns called attributes. 
+  In this, keys are used to to establish and enforce relationships between tables thus data integrity is maintained and redundancy is reduced. 
+  SQL (Structured Query Language) is the most commonly used language to manage such databases.<br><br> 
+  Relational databases differ from other models in several ways:<br> 
+  – Unlike the hierarchical model, which organizes data in a tree structure, relational databases use tabular format, making data more flexible and easier to manage.<br> 
+  – Unlike the network model, which allows complex many-to-many relationships using pointers, relational databases use foreign keys and join operations to represent such relationships.<br> 
+  – Compared to object-oriented databases, relational databases are simpler and more widely supported, but may not handle complex data types as efficiently.<br><br> 
+  Relational databases are preferred for their simplicity, scalability, and support for powerful query languages.</p>
+  </div>
+  <hr>
+  <div>
+  <p class="question">Q.What is data redundancy? How does DBMS help in reducing it?</p>
+  <p class="answer">Dublication/ repetation of the same data multiple times in a database is called data redundancy. An exaple of data redundancy can be taken when contact info of a customer is
+  stored in seperate files. This means that if the contact info has to be updated, then it should be done on all files else there would be inconsistency. DBMS helps prevent this by using a centeralized
+  data storage and using relations and normalization to break down the table where common data is linked using keys. So update can be made in a single place hence saving time, ensuring consistency and less storage is used.</p>
+  </div>
+  <hr>
+  <div>
+  <p class="question">Q.Write differentiate between centralized and distributed database systems.</p>
+  <table class="table1" border="1" cellspacing="0">
+  <tr>
+    <th>Centralized Database System</th>
+    <th>Distributed Database System</th>
+  </tr>
+  <tr>
+    <td>All data is stored and maintained at a single central location.</td>
+    <td>Data is distributed across multiple physical locations.</td>
+  </tr>
+  <tr>
+    <td>Slower access for users far from the central server.</td>
+    <td>Faster access for local users due to localized storage.</td>
+  </tr>
+  <tr>
+    <td>Less relaiable as if the central server fails, the system is inaccessible.</td>
+    <td>More reliable as even if one site fails, others can still function independently.</td>
+  </tr>
+  <tr>
+    <td>Easier to manage, back up, and secure due to central control.</td>
+    <td>More complex to manage and synchronize across multiple sites.</td>
+  </tr>
+  <tr>
+    <td>Lower setup and maintenance costs.</td>
+    <td>Higher setup and maintenance costs due to multiple servers.</td>
+  </tr>
+  <tr>
+    <td>More secure.</td>
+    <td>Less secure due to the larger number of variables.</td>
+  </tr>
+</table>
+
+  </div>
+  
+  <hr>
+  <div>
+  <p class="question">Q.Who is Database Administrator (DBA)? What are the major responsibilities of DBA?</p>
+  <p class="answer">A Database Administrator (DBA) is a person responsible for the installation, configuration, management, maintenance, and security of a database system. 
+  The DBA ensures that databases run efficiently, securely, and are always available for users and applications.<br><br> 
+  <strong>Major responsibilities of a DBA include:</strong><br> 
+  – Installing and configuring the DBMS software.<br> 
+  – Creating and managing database structures such as tables, indexes, and views.<br> 
+  – Monitoring database performance and tuning it for efficiency.<br> 
+  – Managing user access, roles, and permissions to ensure data security.<br> 
+  – Performing regular backups and planning recovery strategies in case of data loss.<br> 
+  – Ensuring data integrity and enforcing database standards.<br> 
+  – Applying software patches and updates.<br> 
+  – Coordinating with developers and system administrators to support application requirements and database integration.</p>
+  </div>
+  <hr>
+  <div>
+  <p class="question">Q.Define normalization. Explain 1NF, 2NF and 3NF with suitable examples. Explain the normalization process with examples.</p>
+  <p class="answer"><strong>Normalization</strong> is the process of organizing data in a database to reduce redundancy (duplicate data) and ensure data integrity. It involves dividing large tables into smaller, related tables and linking them using keys. This makes data easier to maintain, reduces the chance of anomalies (like update or deletion issues), and improves database efficiency.</p>
+
+<p class="answer"><strong>First Normal Form (1NF):</strong><br>
+A table is in 1NF if:<br>
+– All values in each column are atomic (indivisible).<br>
+– Each record is unique.<br><br>
+<b>Example (Not in 1NF):</b><br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Name</th><th>Subject</th></tr>
+  <tr><td>1</td><td>Ram</td><td>Math,English</td></tr>
+  <tr><td>2</td><td>Sita</td><td>Science,Math</td></tr>
+</table><br>
+<b>Conversion to 1NF:</b><br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Name</th><th>Subject</th></tr>
+  <tr><td>1</td><td>Ram</td><td>Math</td></tr>
+  <tr><td>1</td><td>Ram</td><td>English</td></tr>
+  <tr><td>2</td><td>Sita</td><td>Science</td></tr>
+  <tr><td>2</td><td>Sita</td><td>Math</td></tr>
+</table>
+</p>
+
+<p class="answer"><strong>Second Normal Form (2NF):</strong><br>
+A table is in 2NF if:<br>
+– It is in 1NF.<br>
+– All non-key attributes are fully functionally dependent on the primary key (no partial dependency).<br><br>
+<b>Example (In 1NF not 2NF):</b><br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Subject</th><th>Teacher</th></tr>
+  <tr><td>1</td><td>Math</td><td>Mr. Sharma</td></tr>
+  <tr><td>1</td><td>English</td><td>Ms. Koirala</td></tr>
+  <tr><td>2</td><td>Science</td><td>Mr. Lama</td></tr>
+</table><br>
+Here, TeacherName depends only on Subject, not the whole composite key (StudentID + Subject).<br><br>
+<b>Conversion to 2NF:</b><br>
+Main Table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Subject</th></tr>
+  <tr><td>1</td><td>Math</td></tr>
+  <tr><td>1</td><td>English</td></tr>
+  <tr><td>2</td><td>Science</td></tr>
+</table>
+<br>
+Subject-Teacher Table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>Subject</th><th>TeacherName</th></tr>
+  <tr><td>Math</td><td>Mr. Sharma</td></tr>
+  <tr><td>English</td><td>Ms. Koirala</td></tr>
+  <tr><td>Science</td><td>Mr. Lama</td></tr>
+</table></p>
+
+<p class="answer"><strong>Third Normal Form (3NF):</strong><br>
+A table is in 3NF if:<br>
+– It is in 2NF.<br>
+– All attributes are only dependent on the primary key, and not on any other non-key attribute (no transitive dependency).<br><br>
+<b>Example (Not in 3NF):</b><br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>StudentName</th><th>Department</th><th>HOD</th></tr>
+  <tr><td>1</td><td>Ram</td><td>Science</td><td>Dr. Sharma</td></tr>
+  <tr><td>2</td><td>Sita</td><td>Arts</td><td>Dr. Joshi</td></tr>
+</table>
+<br>
+Here, HOD depends on Department, not directly on StudentID.<br><br>
+<b>Conversion to 3NF:</b><br>
+Student Table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>StudentName</th><th>Department</th></tr>
+  <tr><td>1</td><td>Ram</td><td>Science</td></tr>
+  <tr><td>2</td><td>Sita</td><td>Arts</td></tr>
+</table>
+<br>
+Department Table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>Department</th><th>HOD</th></tr>
+  <tr><td>Science</td><td>Dr. Sharma</td></tr>
+  <tr><td>Arts</td><td>Dr. Joshi</td></tr>
+</table></p>
+
+<p class="answer"><strong>Normalization Process Summary:</strong><br>
+1. Remove repeating groups → 1NF<br>
+2. Remove partial dependencies → 2NF<br>
+3. Remove transitive dependencies → 3NF<br><br>
+By following these steps, the database becomes more structured, efficient, and easier to maintain.</p>
+
+
+  </div>
+  <hr>
+  <div>
+  <p class="question">Q.Explain the terms: primary key, foreign key, and candidate key with examples.</p>
+  <p class="answer"><strong>Primary Key:</strong><br>
+A primary key is a field (or a combination of fields) that uniquely identifies each record in a table. It cannot have duplicate or NULL values.<br><br>
+<b>Example:</b> In a Student table:<br>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr><th>StudentID</th><th>Name</th><th>Class</th></tr>
+  <tr><td>1</td><td>Ram</td><td>12</td></tr>
+  <tr><td>2</td><td>Sita</td><td>11</td></tr>
+</table>
+Here, <code>StudentID</code> is the primary key because it uniquely identifies each student.</p>
+
+<p class="answer"><strong>Foreign Key:</strong><br>
+A foreign key is a field in one table that refers to the primary key of another table. It is used to establish a relationship between two tables.<br><br>
+<b>Example:</b> In a Marks table:<br>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr><th>StudentID</th><th>Subject</th><th>Marks</th></tr>
+  <tr><td>1</td><td>Math</td><td>85</td></tr>
+  <tr><td>2</td><td>English</td><td>90</td></tr>
+</table>
+Here, <code>StudentID</code> is a foreign key because it refers to <code>StudentID</code> in the Student table.</p>
+
+<p class="answer"><strong>Candidate Key:</strong><br>
+A candidate key is any field or combination of fields that can uniquely identify a record in a table. A table can have multiple candidate keys, but only one is selected as the primary key.<br><br>
+<b>Example:</b> In a Student table:<br>
+<table border="0" cellspacing="0">
+  <tr><th>StudentID</th><th>Email</th><th>Phone</th></tr>
+  <tr><td>1</td><td>ram@gmail.com</td><td>9800000001</td></tr>
+  <tr><td>2</td><td>sita@gmail.com</td><td>9800000002</td></tr>
+</table>
+Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all candidate keys because each can uniquely identify a student. One of them (e.g., <code>StudentID</code>) is chosen as the primary key.</p>
+
+  </div>
+  <hr>
+  <div>
+  <p class="question">Q.Define the following terms.</p>
+  
+   <table class="table1"  border="1" cellspacing="0" >
+    <tr><th>Data Dictionary</th><td>A data dictionary is a centralized repository that stores information about the structure, organization, and meaning of data in a database. It contains details like table names, column data types, constraints, relationships, and access rights.</td></tr>
+	<tr><th>Primary Key</th><td> A primary key is a field (or combination of fields) in a table that uniquely identifies each record. It must be unique and cannot contain NULL values.</td></tr>
+	<tr><th>Relationship</th><td>A relationship in DBMS refers to the connection or association between two or more tables. It is usually created using keys (e.g., primary key and foreign key) to maintain data consistency and enable data retrieval across multiple tables.</td></tr>
+	<tr><th>Data Manipulation Language (DML)</th><td>DML is a subset of SQL used to manage data within database objects. It includes commands like SELECT, INSERT, UPDATE, and DELETE to retrieve and manipulate data.</td></tr>
+	<tr><th>Structured Query Language (SQL)</th><td>SQL is the standard programming language used to interact with relational databases. It allows users to perform tasks such as querying data, updating records, and managing database structures.</td></tr>
+	<tr><th>Data Integrity</th><td>Data integrity refers to the accuracy, reliability, and consistency of data over its lifecycle. It ensures that data is correct and trustworthy, often maintained through constraints and validation rules in DBMS.</td></tr>
+	<tr><th>Data Definition Language (DDL)</th><td>DDL is a category of SQL commands used to define and modify the structure of database objects such as tables, views, and indexes. Common DDL commands include CREATE, ALTER, and DROP.</td></tr>
+	<tr><th>Data Security</th><td>Data security involves protecting data from unauthorized access, misuse, or corruption. In a DBMS, this is achieved through user authentication, access controls, encryption, and regular backups.</td></tr>
+	<tr><th>Database System</th><td>A database system is a collection of programs and data designed to manage and store large amounts of information efficiently. It includes the DBMS software, the actual database, and the users or applications that interact with it.</td></tr>
+
+
+   </table>
+  </div>
+
+ </body>
+ 
+</html>
