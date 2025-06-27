@@ -3,7 +3,7 @@
  <head>
   <title> Database Management System</title>
   <style>
-   .question{
+   summary{
     font-size: 22px;
 	font-weight:bold;
    }
@@ -27,7 +27,11 @@
    background-color:#CAC4C3;
    background-color:#CAC4C3 ;
    }
-   
+   details{
+   padding:10;
+   background-color:#CAC4C3;
+   background-color:#CAC4C3 ;
+   }
    hr
    {
    border: none;
@@ -58,16 +62,16 @@
  <p style="color:white;">Go back to:
 <button style="background-color: grey;"> <a href="index.html" style="color:white;">Table of Content</a></button> </p>
  <hr>
- <div>
-  <p class="question">Q.What is Database and DBMS? List out the advantages and disadvantages of DBMS.</p>
+ <details>
+  <summary>Q.What is Database and DBMS? List out the advantages and disadvantages of DBMS.</summary>
   <p class="answer">A Database is a structured collection of data that can be stored in both physical and digital form for easy and simple access and management. For eg: A phonebook is an example of physical database and an online banking system can be example of digital database. <br>
 	 A Database Management System (DBMS) is software that manages digital databases, providing users and applications an interface to interact with data efficiently. <br><br>
      <strong>Advantages</strong> of DBMS are reduced data redundancy(data isnt repeated), improved data integrity i.e. it ensures that data is recorded exactly as intended and remains unchanged and uncorrupted during storage, transfer, and retrieval, enhanced data security, efficient data access, support for backup and recovery, and concurrent user access i.e. multiple users can utilize the database without interfearing with eachother.<br>
 	 <strong> It's Disadvantages</strong> are increased system complexity, high cost, slower compared to simple file systems due to advanced features such as data integrity, security and querying , and potential security vulnerabilities if not managed properly.</p>
- </div> 
+ </details> 
  <hr>
-<div> 
- <p class="question">Q.Differentiate between file processing system and DBMS. Give at least four points.</p>
+<details> 
+ <summary>Q.Differentiate between file processing system and DBMS. Give at least four points.</summary>
   
   <table class="table1" border="1" cellspacing="0" >
   <tr>
@@ -92,11 +96,11 @@
   </tr>
   </table>
  <br>
-</div>
+</details>
 
 <hr>
-<div>
-  <p class="question">Q.Explain the different models of DBMS with advantages and disadvantages.</p>
+<details>
+  <summary>Q.Explain the different models of DBMS with advantages and disadvantages.</summary>
   <p class="answer">There are several types of DBMS models used to organize and manage data. Each model has its own structure, advantages, and disadvantages:</p> 
   <p class="answer"><strong>1. Hierarchical Model:</strong><br> 
   Data is organized in a tree-like structure using parent-child relationships, where each child has only one parent.<br><br> 
@@ -125,10 +129,10 @@
   <b>Disadvantages:</b><br> – Less widely adopted.<br> 
   – More complex to design and manage.<br> 
   – Limited support and tools compared to relational DBMS.</p>
- </div>
+ </details>
  <hr>
-  <div>
-  <p class="question">Q.What is a relational database? How is it different from other database models?</p>
+  <details>
+  <summary>Q.What is a relational database? How is it different from other database models?</summary>
   <p class="answer">A relational database is a type of database which stores data in the form of tables called relations.Each table consists of rows called records and columns called attributes. 
   In this, keys are used to to establish and enforce relationships between tables thus data integrity is maintained and redundancy is reduced. 
   SQL (Structured Query Language) is the most commonly used language to manage such databases.<br><br> 
@@ -137,17 +141,17 @@
   – Unlike the network model, which allows complex many-to-many relationships using pointers, relational databases use foreign keys and join operations to represent such relationships.<br> 
   – Compared to object-oriented databases, relational databases are simpler and more widely supported, but may not handle complex data types as efficiently.<br><br> 
   Relational databases are preferred for their simplicity, scalability, and support for powerful query languages.</p>
-  </div>
+  </details>
   <hr>
-  <div>
-  <p class="question">Q.What is data redundancy? How does DBMS help in reducing it?</p>
+  <details>
+  <summary>Q.What is data redundancy? How does DBMS help in reducing it?</summary>
   <p class="answer">Dublication/ repetation of the same data multiple times in a database is called data redundancy. An exaple of data redundancy can be taken when contact info of a customer is
   stored in seperate files. This means that if the contact info has to be updated, then it should be done on all files else there would be inconsistency. DBMS helps prevent this by using a centeralized
   data storage and using relations and normalization to break down the table where common data is linked using keys. So update can be made in a single place hence saving time, ensuring consistency and less storage is used.</p>
-  </div>
+  </details>
   <hr>
-  <div>
-  <p class="question">Q.Write differentiate between centralized and distributed database systems.</p>
+  <details>
+  <summary>Q.Write differentiate between centralized and distributed database systems.</summary>
   <table class="table1" border="1" cellspacing="0">
   <tr>
     <th>Centralized Database System</th>
@@ -179,11 +183,11 @@
   </tr>
 </table>
 
-  </div>
+  </details>
   
   <hr>
-  <div>
-  <p class="question">Q.Who is Database Administrator (DBA)? What are the major responsibilities of DBA?</p>
+  <details>
+  <summary>Q.Who is Database Administrator (DBA)? What are the major responsibilities of DBA?</summary>
   <p class="answer">A Database Administrator (DBA) is a person responsible for the installation, configuration, management, maintenance, and security of a database system. 
   The DBA ensures that databases run efficiently, securely, and are always available for users and applications.<br><br> 
   <strong>Major responsibilities of a DBA include:</strong><br> 
@@ -195,10 +199,10 @@
   – Ensuring data integrity and enforcing database standards.<br> 
   – Applying software patches and updates.<br> 
   – Coordinating with developers and system administrators to support application requirements and database integration.</p>
-  </div>
+  </details>
   <hr>
-  <div>
-  <p class="question">Q.Define normalization. Explain 1NF, 2NF and 3NF with suitable examples. Explain the normalization process with examples.</p>
+  <details>
+  <summary>Q.Define normalization. Explain 1NF, 2NF and 3NF with suitable examples. Explain the normalization process with examples.</summary>
   <p class="answer"><strong>Normalization</strong> is the process of organizing data in a database to reduce redundancy (duplicate data) and ensure data integrity. It involves dividing large tables into smaller, related tables and linking them using keys. This makes data easier to maintain, reduces the chance of anomalies (like update or deletion issues), and improves database efficiency.</p>
 
 <p class="answer"><strong>First Normal Form (1NF):</strong><br>
@@ -284,10 +288,10 @@ Department Table:<br>
 By following these steps, the database becomes more structured, efficient, and easier to maintain.</p>
 
 
-  </div>
+  </details>
   <hr>
-  <div>
-  <p class="question">Q.Explain the terms: primary key, foreign key, and candidate key with examples.</p>
+  <details>
+  <summary>Q.Explain the terms: primary key, foreign key, and candidate key with examples.</summary>
   <p class="answer"><strong>Primary Key:</strong><br>
 A primary key is a field (or a combination of fields) that uniquely identifies each record in a table. It cannot have duplicate or NULL values.<br><br>
 <b>Example:</b> In a Student table:<br>
@@ -318,10 +322,10 @@ A candidate key is any field or combination of fields that can uniquely identify
 </table>
 Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all candidate keys because each can uniquely identify a student. One of them (e.g., <code>StudentID</code>) is chosen as the primary key.</p>
 
-  </div>
+  </details>
   <hr>
-  <div>
-  <p class="question">Q.Define the following terms.</p>
+  <details>
+  <summary>Q.Define the following terms.</summary>
   
    <table class="table1"  border="1" cellspacing="0" >
     <tr><th>Data Dictionary</th><td>A data dictionary is a centralized repository that stores information about the structure, organization, and meaning of data in a database. It contains details like table names, column data types, constraints, relationships, and access rights.</td></tr>
@@ -336,8 +340,8 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
 
 
    </table>
-  </div>
-<hr>
+  </details>
+
  </body>
  
 </html>
