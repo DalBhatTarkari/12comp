@@ -326,7 +326,7 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
 
   </details>
   <hr>
-	 <details>
+<details>
   <summary>Q.What is SQL? Explain its components and common functions.</summary>
   <p class="answer">
     <strong>SQL (Structured Query Language)</strong> is a standard language used to manage and manipulate data in a relational database. It allows users to create, read, update, and delete data easily using commands.<br><br>
@@ -363,6 +363,33 @@ Here, <code>StudentID</code>, <code>Email</code>, and <code>Phone</code> are all
     In summary, SQL is a powerful language used to interact with databases in a structured and efficient way.
   </p>
 </details>
+<hr>
+  <details>
+  <summary>Q. Show the use of SQL commands like <code>CREATE,SELECT,INSERT,etc</code>.</summary>
+  <p><strong>CODE:</strong></p>
+  <pre>
+  CREATE DATABASE CompanyDB;
+  USE DATABASE CompanyDB;
+  CREATE TABLE Employees ( EmployeeID INT PRIMARY KEY, FirstName VARCHAR(50), LastName VARCHAR(50),Age INT,Department VARCHAR(50));
+
+  INSERT INTO Employees (EmployeeID, FirstName, LastName, Age, Department)
+  VALUES 
+        (1, 'Ram', 'Singh', 30, 'HR'),
+        (2, 'Virat', 'Smith', 25, 'IT'),
+        (3, 'Micheal', 'Jordon', 40, 'Finance'),
+        (4, 'Sherlock', 'Holmes', 35, 'Marketing');
+  SELECT * FROM Employees
+  WHERE EmployeeID = 1;
+
+  </pre>
+  <p><strong>OUTPUT:</strong><br><img src="images\create_insert_select.jpg"</p>
+  <p><strong>WHAT IT DOES:</strong>
+  <br>The CREATE command is used to create DATABASES, TABLES, etc. 
+  <br>The INSERT command is used to add new records into the tables. eg: if i want to add data of new employee i'd use INSERT command.
+  <br>The SELECT command is used to search for the records that satisfy the provided condition. In this case where EmployeeID = 1 .i.e it shows all the deatil of the employee whose id is 1.
+  
+  </p>
+  </details>
 <hr>
 
   <details>
